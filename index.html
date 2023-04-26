@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Meta data-->
+  <meta charset="utf-8">
+  <meta name="description" content="VolumeSphere, with JavaScript">
+  <meta name="keywords" content="immaculata, ics2o">
+  <meta name="author" content="Graydon Ezzeddin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+  <link rel="manifest" href="./fav/site.webmanifest">
+  <!--Css-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!--title-->
+  <title>How much will you have to pay to tenter the museume</title>
+</head>
+
+<body>
+  <center>
+  <!--JavaScript-->
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!--MDL-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title"> How much will the museum cost?</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <!-- Text and Image-->
+      <img src="./images/Museum.jpg" alt="museum" length=500 width="300" <br>
+      <h3>Insert your age below!</h3>
+      <!-- Simple Textfield -->
+      <form action="#">
+        <h3> Age (In Years): </h3>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age" />
+          <label class="mdl-textfield__label" for="temperature">Age...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </form>
+
+      <!-- list of days of the week -->
+      <label for="day">Day of the week:</label>
+      <select name="day" id="day">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday"> Thursday </option>
+        <option value="friday"> Friday </option>
+        <option value="saturday"> Saturday </option> 
+        <option value="sunday"> Sunday </option>
+      </select>
+
+      <!-- Raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="calculate()">
+        Click!
+      </button>
+      <br />
+      <p>
+      <div id="program-feedback">
+      </div>
+      </p>
+    </main>
+  </div>
+  </center>
+</body>
+
+</html>
